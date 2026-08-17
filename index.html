@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f7f2">
+  <meta name="description" content="每一次快门，都是你认真看过世界的证明。">
+  <title>二十 · 摄影作品展</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <div class="progress" aria-hidden="true"></div>
+
+    <section class="entrance" role="button" tabindex="0" aria-label="进入摄影展">
+      <img class="entrance__image" src="gallery/01/01.webp" alt="雾中的树林">
+      <div class="entrance__shade"></div>
+      <div class="entrance__content">
+        <h1>每一次快门，都是你认真看过世界的证明。</h1>
+      </div>
+    </section>
+
+    <header class="site-header">
+      <a class="site-mark" href="#top" aria-label="返回开头"><span>二十</span><small>摄影作品展</small></a>
+      <nav aria-label="章节导航">
+        <a href="#landscape">风景</a><a href="#architecture">建筑</a><a href="#portrait">人像</a><a href="#campus">校园</a><a href="#stars">星空</a>
+      </nav>
+    </header>
+
+    <section class="prologue" id="top">
+      <p class="eyebrow reveal">ABOUT THIS EXHIBITION</p>
+      <div class="prologue__grid reveal">
+        <h2>看见，<br>然后留下。</h2>
+        <div>
+          <p>四十八张照片，五段观看世界的方式。它们来自山野、城市、人物、校园和夜空，也来自一次次愿意停下来的瞬间。</p>
+          <p>这不是一份完成的答案，只是二十岁以前，被认真保存下来的一部分时间。</p>
+        </div>
+      </div>
+      <div class="chapter-index reveal" id="chapter-index"></div>
+    </section>
+
+    <div id="chapters"></div>
+
+    <footer class="finale">
+      <img src="gallery/05/04.webp" alt="深夜星空">
+      <div class="finale__shade"></div>
+      <div class="finale__content reveal">
+        <p class="eyebrow">ONE MORE THING</p>
+        <h2>展览结束之前，<br>还有一段话。</h2>
+        <button type="button" id="open-letter">打开这封信 <span aria-hidden="true">→</span></button>
+      </div>
+      <p class="finale__credit">二十岁 · 生日快乐</p>
+    </footer>
+
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="照片查看器" hidden>
+      <button class="lightbox__close" type="button" aria-label="关闭">关闭 ×</button>
+      <button class="lightbox__nav lightbox__nav--prev" type="button" aria-label="上一张">←</button>
+      <img src="" alt="摄影作品">
+      <button class="lightbox__nav lightbox__nav--next" type="button" aria-label="下一张">→</button>
+      <p class="lightbox__meta"></p>
+    </div>
+
+    <div class="letter-backdrop" id="letter" role="dialog" aria-modal="true" aria-label="生日留言" hidden>
+      <article class="letter">
+        <button type="button" id="close-letter" aria-label="关闭信件">×</button>
+        <p class="letter__date">TO YOUR TWENTIES</p>
+        <h2>写在二十岁</h2>
+        <div class="letter__body">
+          <p>看到这里，你可能会觉得这个网站还有一点粗糙。没关系，你可以继续拍下新的照片，也继续完善这里。</p>
+          <p>我想，这个网站或许可以算作一个起点。就像你的人生来到二十岁，也抵达了一个新的节点。前面还有无数风景在等着你。</p>
+          <p>所以，请继续按下快门，记录属于你人生黄金时代的每一个瞬间吧。</p>
+        </div>
+        <strong>二十岁，生日快乐！</strong>
+        <small>网站以后就交给你慢慢丰富了，哈哈。</small>
+      </article>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
